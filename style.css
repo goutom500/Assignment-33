@@ -1,0 +1,151 @@
+body{
+    overflow-x: hidden;
+}
+.our-header{
+    background-color: #e0e0e0;
+}
+.header-logo {
+	width: 90px;
+}
+/* our-primary-menu */
+.our-primary-menu li a {
+	color: #111;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 23px 17px;
+	transition: .4s;
+	position: relative;
+}
+.our-primary-menu li a:hover{
+    transition: .4s;
+    color: #3763eb;
+}
+.our-primary-menu li a::after {
+	content: "";
+	position: absolute;
+	top: 75px;
+	left: 17px;
+	width: 30px;
+	height: 3px;
+	background-color: #3763eb;
+	opacity: 0;
+	visibility: hidden;
+	transition: .4s;
+}
+.our-primary-menu li a:hover::after{
+	opacity: 1;
+	visibility: visible;
+	transition: .4s;
+}
+
+.our-primary-menu li .active::after {
+	content: "";
+	position: absolute;
+	top: 75px;
+	left: 17px;
+	width: 30px;
+	height: 3px;
+	background-color: #3763eb;
+	opacity: 1;
+	visibility: visible;
+	transition: .4s;
+}
+
+
+.active{
+    color: #3763eb !important; 
+}
+.btn-primary {
+	padding: 13px 40px 14px 40px;
+	border-radius: 70px;
+	background-color: #fff;
+	color: #007bff;
+	border-color: #fff;
+	margin-left: 25px;
+	transition: all .4s ease-in-out;
+}
+
+.btn-primary:hover{
+    background-color:#007bff;
+	transform: translateY(-10px);
+	transition: all .4s ease-in-out;
+} 
+
+/* Dropdown menu */
+.our-primary-menu li{
+    position: relative;
+}
+.our-primary-menu li ul {
+	position: absolute;
+	top: 186%;
+	left: 0;
+	background-color: #fff;
+	width: 200px;
+	list-style: none;
+	padding: 13px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+    border-radius: 3px;
+}
+.our-primary-menu li ul li {
+	background-color: #007bff;
+	padding: 5px;
+    border-radius: 3px;
+}
+.our-primary-menu li ul li a {
+	color: #fff !important;
+	font-size: 17px;
+  
+}
+.our-primary-menu li ul li a {
+	color: #fff !important;
+	font-size: 17px;
+
+}
+
+.our-primary-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transition: all .4s ease-in-out;
+}
+
+/* slider-section */
+.slider-caption h2 {
+	font-size: 50px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+.slider-caption p {
+	color: #767676;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.slider-caption-wrap{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+.slider-right {
+	background: url(https://i.postimg.cc/26HX4CxS/hero-image.jpg) no-repeat;
+	background-position: top center;
+	border-radius: 50%;
+	width: 800px;
+	height: 800px;
+	position: absolute;
+	top: -140px;
+	right: -210px;
+}
+.active-2{
+    background-color: #007bff !important;
+    color: #fff !important;
+    margin-left: 0 !important;
+	transition: all .4s ease-in-out;
+}
+
+.active-2:hover{
+	transition: all .4s ease-in-out;
+	border-radius: 70px;
+	background-color: rgba(17, 17, 17, 0.993) !important;
+}
